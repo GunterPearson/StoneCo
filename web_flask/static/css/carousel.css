@@ -1,0 +1,45 @@
+/* .carousel-item img {
+    width: 540px;
+    height: 350px;
+  } */
+  
+.carousel {
+  margin-top: 110px;
+}
+
+.carousel-item img {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+#home img {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  width: 540px;
+  height: 350px;
+}
+
+.clean-block .block-heading {
+  margin-bottom: 0px;
+}
+
+.project-button {
+  margin-bottom: 40px;
+}
+
+.description {
+  margin-bottom: 10px;
+  padding-top: 50px;
+  background-color: #f6f6f6;
+  text-align: center;
+  border-bottom: 1px solid #ff0000;
+  border-left: 1px solid #ff0000;
+  border-right: 1px solid #ff0000;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.description h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

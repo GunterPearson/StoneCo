@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="videoContainer" class="mobile-background">
+    <div class="container-fluid d-flex justify-content-center align-items-center align-content-center video-parallax-container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center" style="color: rgb(255,255,255);">StoneCo. Downflo</h1>
+                <!-- <p class="text-center" style="color: rgb(255,255,255);">We are a family owned and operated do it all construction company providing service to Tulsa Area.</p> -->
+            </div>
+        </div><video id="videoIntro" class="filter" autoplay="" loop="" muted=""><source src="static/vid/first.mov" type="video/mp4" wp-acf="[{'type':'url','name':'video','label':'Video','wrapper':{'width':30}}]" wp-attr="[{'target':'src','replace':'%1'}]"></video></div>
+</div>
+<div class="features-clean">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center" style="font-size: 45px;">WE DO IT ALL!</h2>
+            <p class="text-center" style="color: #ff0000;font-size: 20px;"><strong>Roofing. Painting. Fencing. Siding. Trees. Gutters. Power Washing.</strong><br></p>
+        </div>
+        <div class="row features">
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-shield icon" data-aos="fade" style="color: #ff0000;"></i>
+                <h3 data-aos="fade" data-aos-delay="50" class="name">100% Fully Licensed &amp; Insured</h3>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fas fa-handshake icon" data-aos="fade" data-aos-delay="100" style="color: #ff0000;"></i>
+                <h3 data-aos="fade" data-aos-delay="150" class="name">1000+ Satisfied Customers</h3>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fas fa-user-clock icon" data-aos="fade" data-aos-delay="200" style="color: #ff0000;"></i>
+                <h3 data-aos="fade" data-aos-delay="250" class="name">10+ Years of Experince</h3>
+            </div>
+        </div>
+    </div>
+</div>
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h1 class="text-info" style="color: #ff0000;">GET A FREE QUOTE</h1>
+                    <p>Fill in the form below and get a free quote!</p>
+                </div>
+                <form method="POST" action="/">
+                    <div class="form-group"><label>Name</label><input class="form-control" name="name"></div>
+                    <div class="form-group"><label>Subject</label><input class="form-control" name="subject"></div>
+                    <div class="form-group"><label>Email</label><input class="form-control" name="email"></div>
+                    <div class="form-group"><label>Message</label><textarea class="form-control" name=message></textarea></div>
+                    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background: #ff0000;border-color: #dc3545;">Send</button></div>
+                </form>
+            </div>
+        </section>
+        <section class="clean-block clean-info dark" style="background: rgb(255,255,255);">
+            <div class="container">
+                <div class="block-heading">
+                    <h1 style="color: #ff0000;">Our Services</h1>
+                    <p style="font-size: 20px;">How Can We Help You?</p>
+                </div>
+                <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div id="Div_Promo_Carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active" id="home"><img class="d-block w-100" alt="scenary/image1.jpg" src="static/img/gutter/brick_a.JPG"></div>
+                            <div class="carousel-item" id="home"><img class="d-block w-100" alt="Slide Image" src="static/img/gutter/gutter_a.JPG"></div>
+                            <div class="carousel-item" id="home"><img class="d-block w-100" alt="Slide Image" src="static/img/gutter/rw_a.JPG"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" role="button" data-slide="prev" href="#Div_Promo_Carousel"> <span class="carousel-control-prev-icon" aria-hidden="true"> </span><span class="sr-only">Prev </span></a><a class="carousel-control-next"
+                                role="button" data-slide="next" href="#Div_Promo_Carousel"> <span class="carousel-control-next-icon" aria-hidden="true"> </span><span class="sr-only">Next </span></a></div>
+                        <ul class="carousel-indicators" role="">
+                            <li class="active" data-slide-to="0" data-target="#Div_Promo_Carousel">Item 1</li>
+                            <li data-slide-to="1" data-target="#Div_Promo_Carousel">Item 1</li>
+                            <li data-slide-to="2" data-target="#Div_Promo_Carousel">Item 1</li>
+                        </ul>
+                    </div>
+                </div>
+                    <!-- <div class="col-md-6"><img class="img-thumbnail" src="static/img/scenery/image5.jpg"></div> -->
+                    <div class="col-md-6">
+                        <h3>Services we offer are:</h3>
+                        <p></p>
+                        <div class="getting-started-info">
+                            <ul>
+                                <li>Seamless Guttering Installation, Cleanouts and Repair.</li>
+                                <li>Tree and Tree Limb Removal.</li>
+                                <li>Siding</li>
+                                <li>Painting</li>
+                                <li>Power Washing Fence and Brick</li>
+                            </ul>
+                        </div>
+                        <a href="{{url_for('projects')}}"><button class="btn btn-outline-primary btn-lg" type="button">Learn More</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clean-block about-us">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-light">Meet Our Team</h2>
+                    <!-- <p style="color: rgb(246, 246, 246);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p> -->
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="static/img/avatars/avatar1.jpg">
+                            <div class="card-body info">
+                                <h4 class="card-title">Stone Shew</h4>
+                                <p class="card-text">I am the CEO and would like to personally welcome you to StoneCo. Downflo<br></p>
+                                <div class="icons"><a href="#"><i class="icon-social-facebook" style="color: #ff0000;"></i></a><a href="#"><i class="icon-social-instagram" style="color: #ff0000;"></i></a><a href="#"><i class="icon-social-twitter" style="color: #ff0000;"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="static/img/avatars/avatar2.jpg">
+                            <div class="card-body info">
+                                <h4 class="card-title">Gunter Pearson</h4>
+                                <p class="card-text">I am the CTO and am in charge of all Software development<br></p>
+                                <div class="icons"><a href="#"><i class="icon-social-facebook" style="color: #ff0000;"></i></a><a href="#"><i class="icon-social-instagram" style="color: #ff0000;"></i></a><a href="#"><i class="icon-social-twitter" style="color: #ff0000;"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="static/img/avatars/avatar3.jpg">
+                            <div class="card-body info">
+                                <h4 class="card-title">Ally Sanders</h4>
+                                <p class="card-text">I have no idea what ally does, but here is a place holder<br></p>
+                                <div class="icons"><a href="#"><i class="icon-social-facebook" style="color: #ff0000;"></i></a><a href="#"><i class="icon-social-instagram" style="color: #ff0000;"></i></a><a href="#"><i class="icon-social-twitter" style="color: #ff0000;"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endblock %}

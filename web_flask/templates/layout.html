@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>StoneCo</title>
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="stylesheet" href="static/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="static/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="static/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="static/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="static/css/color.css">
+    <link rel="stylesheet" href="static/css/Customizable-Carousel-swipe-enabled.css">
+    <link rel="stylesheet" href="static/css/Features-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="static/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="static/css/button.css">
+    <link rel="stylesheet" href="static/css/carousel.css">
+    <link rel="stylesheet" href="static/css/smoothproducts.css">
+    <link rel="stylesheet" href="static/css/Video-Parallax-Background-v3.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top clean-navbar" style="background: #000000;">
+        <div class="container"><a class="navbar-brand text-right logo" href="{{  url_for('home')  }}">StoneCo. Downflo</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{  url_for('home')  }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{  url_for('projects')  }}">projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{  url_for('about')  }}">about us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{  url_for('contact')  }}">Contact Us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+    {% block content %}{% endblock %}
+    </main>
+    <footer style="background: #000000;">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#">StoneCo.</a></h3>
+                <p class="links"><a href="{{  url_for('home')  }}">Home</a><strong> · </strong><a href="{{  url_for('projects')  }}">Projects</a><strong> · </strong><a href="{{  url_for('about')  }}">About</a><strong> · </strong><a href="{{  url_for('contact')  }}">Contact</a></p>
+                <p class="company-name">© StoneCo. downflo 2020. All Rights Reserved</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                     <!-- THIS GOES IN PARAGRAPH TAG BELOW <span class="new-line-span">21 Revolution Street</span>  -->
+                    <p>Tulsa, Oklahoma</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"> +1 918-200-1939</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank" style="color: #f6f6f6;">stoneco@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 footer-about">
+                <h4>About the company</h4>
+                <p>We are a family owned and operated do it all construction company providing service to Tulsa Area.</p>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook" style="color: #3b99e0;"></i></a><a href="#"><i class="fa fa-twitter" style="color: #3b99e0;"></i></a><a href="#"><i class="fa fa-instagram" style="color: #ffffff;"></i></a><a href="#"><i class="fa fa-youtube" style="color: #ff0000;"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/nav.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="static/js/Customizable-Carousel-swipe-enabled.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="static/js/smoothproducts.min.js"></script>
+    <script src="static/js/theme.js"></script>
+    <script src="static/js/Video-Parallax-Background-v3.js"></script>
+</body>
+
+</html>
