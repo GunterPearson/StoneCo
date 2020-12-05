@@ -28,7 +28,7 @@ def home():
     """home route for html file"""
     form = ContactForm()
     if request.method == "POST":
-        msg = Message(form.subject.data, sender=form.email.data, recipients=['xogarim769@btsese.com'])
+        msg = Message(form.subject.data, sender=form.email.data, recipients=['howaj26162@hebgsw.com'])
         msg.body = form.name.data + "\n" + form.message.data + "\n\n" + form.email.data
         mail.send(msg)
         flash("Message is Sent!")
@@ -51,4 +51,4 @@ def projects():
 
 if __name__ == "__main__":
     """ Main Function """
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', debug=True)
