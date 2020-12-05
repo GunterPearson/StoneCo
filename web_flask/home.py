@@ -3,7 +3,7 @@
 from flask import Flask, render_template, redirect, request, flash, jsonify
 import os
 from flask_cors import CORS
-from .forms import ContactForm
+from web_flask.forms import ContactForm
 from flask_mail import Message, Mail
 app = Flask(__name__)
 cors = CORS(app, resources={r"": {"origins": "*"}})
@@ -48,7 +48,3 @@ def about():
 def projects():
     """home route for html file"""
     return render_template("projects.html")
-
-if __name__ == "__main__":
-    """ Main Function """
-    app.run(host='0.0.0.0', debug=True)
