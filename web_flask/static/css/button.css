@@ -40,9 +40,9 @@
   margin-left: 20px;
 }
 
-@media only screen and (max-width: 415px) {
+/* @media only screen and (max-width: 415px) {
   .Back-Video {
     max-height: 100%;
     max-width: 100%;
   }
-}
+} */
