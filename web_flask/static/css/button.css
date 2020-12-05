@@ -41,7 +41,7 @@
 }
 
 @media only screen and (max-width: 415px) {
-  #videIntro {
+  .Back-Video {
     max-height: 100%;
     max-width: 100%;
   }
