@@ -3,7 +3,7 @@
 from flask import Flask, render_template, redirect, request, flash, jsonify
 import os
 from flask_cors import CORS
-from models import ContactForm
+from .forms import ContactForm
 from flask_mail import Message, Mail
 app = Flask(__name__)
 cors = CORS(app, resources={r"": {"origins": "*"}})
