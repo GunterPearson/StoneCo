@@ -22,7 +22,7 @@ def home():
         TEXT = form.name.data + "\n" + form.message.data + "\n\n" + form.email.data
         # Gmail Sign In
         gmail_sender = 'gunter10pearson@gmail.com'
-        gmail_passwd = 'Gunter$2000'
+        gmail_passwd = 'StoneCo$$'
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
