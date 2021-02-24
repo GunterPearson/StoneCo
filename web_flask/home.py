@@ -10,14 +10,13 @@ app = Flask(__name__)
 cors = CORS(app, resources={r"": {"origins": "*"}})
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
-app.config['SECRET_KEY'] = SECRET_KEY
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 app.config['MAIL_DEBUG'] = True
 app.config['MAIL_USERNAME'] = 'gunter10pearson@gmail.com'
-app.config['MAIL_PASSWORD'] = 'StoneCo$$'
+app.config['MAIL_PASSWORD'] = 'Guntergmail10'
 app.config['MAIL_DEFAULT_SENDER'] = None
 app.config['MAIL_MAX_SEND'] = None
 app.config['MAIL_SUPPRESS_SEND'] = False
@@ -30,7 +29,7 @@ def home():
     """home route for html file"""
     form = ContactForm()
     if request.method == "POST":
-        msg = Message(form.subject.data, sender=form.email.data, recipients=['howaj26162@hebgsw.com'])
+        msg = Message(form.subject.data, sender=form.email.data, recipients=['nefer89610@geeky83.com'])
         msg.body = form.name.data + "\n" + form.message.data + "\n\n" + form.email.data
         mail.send(msg)
         flash("Message is Sent!")
