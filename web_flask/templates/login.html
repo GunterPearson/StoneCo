@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <main class="page contact-us-page">
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h1 class="text-info" style="color: #ff0000;">Log In</h1>
+                    <!-- <p>Get a free Quote!</p> -->
+                </div>
+                <form method="POST" action="/login">
+                    <div class="form-group"><label>Username</label><input class="form-control" name="username"></div>
+                    <div class="form-group"><label>Password</label><input class="form-control" name="password"></div>
+                    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background: #ff0000;border-color: #dc3545;">Send</button></div>
+                </form>
+            </div>
+        </section>
+{% endblock %}

@@ -23,3 +23,43 @@ class ContactForm(FlaskForm):
     )
     message = StringField('Message', validators=[DataRequired()])
     submit = SubmitField('Submit')
+
+class LoginForm(FlaskForm):
+    """User Sign-up Form."""
+    username = StringField('Username', validators=[DataRequired()])
+
+    password = StringField(
+        'Password',
+        validators=[DataRequired()]
+    )
+    submit = SubmitField('Submit')
+
+class ChangeForm(FlaskForm):
+    """User Sign-up Form."""
+    t1 = StringField('T1', validators=[DataRequired()])
+
+    p1 = StringField(
+        'P1',
+        validators=[DataRequired()]
+    )
+    t2 = StringField('T2', validators=[DataRequired()])
+
+    p2 = StringField(
+        'P2',
+        validators=[DataRequired()]
+    )
+    p2a = StringField(
+        'P2a',
+        validators=[DataRequired()]
+    )
+    t3 = StringField('T3', validators=[DataRequired()])
+
+    p3 = StringField(
+        'P3',
+        validators=[DataRequired()]
+    )
+    p3a = StringField(
+        'P3a',
+        validators=[DataRequired()]
+    )
+    submit = SubmitField('Submit')
