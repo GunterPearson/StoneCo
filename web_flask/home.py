@@ -38,7 +38,8 @@ def home():
     """home route for html file"""
     form = ContactForm()
     if request.method == "POST":
-        msg = Message(form.subject.data, sender=form.email.data, recipients=['stoneco.downflo@gmail.com'])
+        # msg = Message(form.subject.data, sender=form.email.data, recipients=['stoneco.downflo@gmail.com'])
+        msg = Message(form.subject.data, sender=form.email.data, recipients=['gunterpearson2000@gmail.com'])
         msg.body = form.name.data + "\n" + form.message.data + "\n\n" + form.email.data
         mail.send(msg)
         flash("Message is Sent!")
