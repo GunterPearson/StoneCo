@@ -1,0 +1,33 @@
+.navbar {
+    border-bottom: 2px solid #ff0000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-img {
+    background: no-repeat, #000000;
+    background-size: contain, auto;
+    height: 120px;
+    width: 240px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-img {
+        height: 80px;
+        width: 180px;
+    }
+}
+
+.footer-img {
+    background: no-repeat, #000000;
+    background-size: contain, auto;
+    height: 100px;
+    width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-img {
+        height: 100px;
+        width: 200px;
+    }
+}
