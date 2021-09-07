@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="static/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="static/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="static/css/color.css">
+    <link rel="stylesheet" href="static/css/navbar.css">
     <link rel="stylesheet" href="static/css/Customizable-Carousel-swipe-enabled.css">
     <link rel="stylesheet" href="static/css/Features-Clean.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
@@ -39,8 +40,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top clean-navbar" style="background: #000000;">
-        <div class="container"><a class="navbar-brand text-right logo" href="{{  url_for('home')  }}"><img src="static/img/complete/white_logo.png" alt="StoneCo. Downflo" style="background: no-repeat, #000000;background-size: contain, auto;height: 65px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top clean-navbar" style="background: #000000;">
+        <div class="container"><a class="navbar-brand text-right logo" href="{{  url_for('home')  }}"><img class="navbar-img" src="static/img/logo/new2_logo.png" alt="StoneCo. Downflo"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
@@ -58,7 +59,7 @@
     <footer style="background: #000000;">
         <div class="row">
             <div class="col-sm-6 col-md-4 footer-navigation">
-                <h3><a href="#">StoneCo.Downflo</a></h3>
+                <h3><a href="#"><img class="footer-img" src="static/img/logo/new2_logo.png" alt="StoneCo. Downflo"></a></h3>
                 <p class="links"><a href="{{  url_for('home')  }}">Home</a><strong> · </strong><a href="{{  url_for('projects')  }}">Projects</a><strong> · </strong><a href="{{  url_for('about')  }}">About</a><strong> · </strong><a href="{{  url_for('contact')  }}">Contact</a> · </strong><a href="{{  url_for('login')  }}">Login</a></p>
                 <p class="company-name">© StoneCo.Downflo 2020. All Rights Reserved</p>
             </div>
